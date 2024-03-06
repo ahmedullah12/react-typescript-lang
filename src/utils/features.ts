@@ -37,7 +37,7 @@ export const translateWords = async(params:LangType): Promise<WordType[]> => {
               },
               headers: {
                 'content-type': 'application/json',
-                'X-RapidAPI-Key': '5ac1c3a50dmsh77325e630416e6bp1dae46jsna078da916c37',
+                'X-RapidAPI-Key': import.meta.env.VITE_RAPID_API,
                 'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com'
               },
         })
